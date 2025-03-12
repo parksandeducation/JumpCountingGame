@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+.game-container {
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px); /* 10 columns each 50px wide */
+  gap: 5px; /* 5px gap between cells */
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  /* For a consistent box model including border */
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
